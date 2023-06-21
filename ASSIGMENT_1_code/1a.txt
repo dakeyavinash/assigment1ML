@@ -1,0 +1,12 @@
+import numpy as np
+        rand = np.random.randint(1,20,15) #create random vector of size 15 having only Integers in the range 1-20.
+    print("Original array:")
+    print(rand)
+    rand=np.reshape(rand,(3,5),order='c') #Reshape the array to 3 by 5
+    print(rand)
+    print(np.shape(rand)) #Print array shape
+            maxNum = np.amax(rand, axis=1)
+    rand=np.where(np.isin(rand,maxNum), 0, rand) #Replace the max in each row by 0
+    print("Maximum value of each row replaced by 0:")
+    print(rand)
+}

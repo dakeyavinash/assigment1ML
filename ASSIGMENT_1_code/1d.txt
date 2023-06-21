@@ -1,0 +1,10 @@
+import numpy as np
+        A = np.array([[1, 2],
+        [3, 4],
+        [5, 6]])
+        reshape_3x2 = A.reshape(3, 2)
+        print("Reshape 3x2:")
+        print(reshape_3x2)
+        reshape_2x3 = A.reshape(2, 3)
+        print("\nReshape 2x3:")
+        print(reshape_2x3)

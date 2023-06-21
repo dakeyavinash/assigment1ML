@@ -1,0 +1,11 @@
+import numpy as np
+        A = np.array([[3, -2],
+        [1, 0]])
+        eigenvalues, eigenvectors = np.linalg.eig(A)
+        print("Eigenvalues:")
+        for eigenvalue in eigenvalues:
+        print(eigenvalue)
+        print("\nRight Eigenvectors:")
+        for i in range(len(eigenvectors)):
+        print(f"Eigenvector {i+1}: {eigenvectors[:, i]}")
+        print(result)i
